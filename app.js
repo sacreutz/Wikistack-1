@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const staticMiddleWare = express.static('public');
 const views = require('./views');
-
+console.log('hello sophie');
 app.use(staticMiddleWare);
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
