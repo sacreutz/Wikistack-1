@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
   },
   "author": "me!",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "morgan": "^1.9.1"
+    "html-template-tag": "^2.0.0",
+    "morgan": "^1.9.1",
+    "volleyball": "^1.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
   }
 }
