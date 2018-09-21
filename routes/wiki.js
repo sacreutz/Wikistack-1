@@ -9,10 +9,11 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', async (req, res, next) => {
-  console.log(req.body.title);
+  console.log(req.body);
   const page = new Page ({
-    title = req.body.title,
-    content = req.body.content,
+    title : req.body.title,
+    content : req.body.content,
+    slug: req.body.title
   })
   try {
     await page.save();
